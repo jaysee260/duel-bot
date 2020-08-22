@@ -1,0 +1,12 @@
+version: '3.3'
+
+services:
+  duel-bot:
+    image: 6containers/duel-bot:latest
+    container_name: duel-bot
+    environment:
+      - TOKEN=$TOKEN
+      - VOICE_CHANNEL=$VOICE_CHANNEL
+      - TEXT_CHANNEL=$TEXT_CHANNEL
+      - MESSAGE=$MESSAGE
+      - GIF_URL=$GIF_URL
